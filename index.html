@@ -133,7 +133,7 @@ footer b{color:#fff}
 <section id="kup" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
 <div class="wrap">
 <h2>Cennik</h2>
-<p class="sub">Po zapłacie od razu dostajesz link do pobrania plików PDF (A4, gotowe do druku).</p>
+<p class="sub">Płatność BLIK, kartą, Apple Pay lub Google Pay. Po zapłacie od razu dostajesz link do pobrania plików PDF (A4, gotowe do druku).</p>
 <div class="full">
 <div>
 <span class="badge">PEŁNY PAKIET · NAJLEPSZY WYBÓR</span>
@@ -182,22 +182,22 @@ footer b{color:#fff}
 </footer>
 
 <script>
-/* ======== DO UZUPEŁNIENIA: linki do produktów Payhip i ceny ======== */
-const FULL = { price: "59 zł", url: "https://payhip.com/b/OaIDk" };
+/* ======== DO UZUPEŁNIENIA: linki płatności Stripe i ceny ======== */
+const FULL = { price: "59 zł", url: "https://buy.stripe.com/7sY6oAbUh7oJ9Ab1vl5gc0f" };
 const DZIALY = [
-  ["01","Liczby i działania","#2563EB",6,true,"9,90 zł","https://payhip.com/b/hWYtc"],
-  ["02","Potęgi i pierwiastki","#7C3AED",4,true,"9,90 zł","https://payhip.com/b/ocQn1"],
-  ["03","Procenty","#DB2777",3,true,"9,90 zł","https://payhip.com/b/kC7u9"],
-  ["04","Wyrażenia algebraiczne i wzory","#0F766E",2,false,"9,90 zł","https://payhip.com/b/EheNy"],
-  ["05","Równania, nierówności i proporcje","#EA580C",8,true,"9,90 zł","https://payhip.com/b/y5o6F"],
-  ["06","Obliczenia praktyczne","#B7791F",6,true,"9,90 zł","https://payhip.com/b/cjwSq"],
-  ["07","Statystyka i diagramy","#16A34A",3,true,"9,90 zł","https://payhip.com/b/4n6XV"],
-  ["08","Kombinatoryka, prawdopodobieństwo i logika","#BE123C",2,true,"9,90 zł","https://payhip.com/b/f5mhT"],
-  ["09","Geometria – kąty i własności figur","#3730A3",3,true,"9,90 zł","https://payhip.com/b/LFWIn"],
-  ["10","Geometria – pola, obwody, twierdzenie Pitagorasa","#0284C7",10,true,"9,90 zł","https://payhip.com/b/enwcZ"],
-  ["11","Układ współrzędnych","#475569",1,false,"9,90 zł","https://payhip.com/b/bIPMJ"],
-  ["12","Bryły","#92400E",7,true,"9,90 zł","https://payhip.com/b/Zx4CV"]
-]; /* [numer, nazwa, kolor, liczba zestawów, czy jest zeszyt, cena, link Payhip] */
+  ["01","Liczby i działania","#2563EB",6,true,"9,90 zł","https://buy.stripe.com/00w3co4rP10l13Fei75gc03"],
+  ["02","Potęgi i pierwiastki","#7C3AED",4,true,"9,90 zł","https://buy.stripe.com/8x26oAbUhdN727Jgqf5gc04"],
+  ["03","Procenty","#DB2777",3,true,"9,90 zł","https://buy.stripe.com/7sY6oAbUhbEZfYzb5V5gc05"],
+  ["04","Wyrażenia algebraiczne i wzory","#0F766E",2,false,"9,90 zł","https://buy.stripe.com/28E14ggax24pfYza1R5gc06"],
+  ["05","Równania, nierówności i proporcje","#EA580C",8,true,"9,90 zł","https://buy.stripe.com/7sY9AM2jHbEZ3bN5LB5gc07"],
+  ["06","Obliczenia praktyczne","#B7791F",6,true,"9,90 zł","https://buy.stripe.com/4gM8wIaQdgZjfYza1R5gc08"],
+  ["07","Statystyka i diagramy","#16A34A",3,true,"9,90 zł","https://buy.stripe.com/14A6oA9M9fVf5jV7TJ5gc09"],
+  ["08","Kombinatoryka, prawdopodobieństwo i logika","#BE123C",2,true,"9,90 zł","https://buy.stripe.com/4gMbIU7E17oJ9Ab8XN5gc0a"],
+  ["09","Geometria – kąty i własności figur","#3730A3",3,true,"9,90 zł","https://buy.stripe.com/8x200caQddN74fR3Dt5gc0b"],
+  ["10","Geometria – pola, obwody, twierdzenie Pitagorasa","#0284C7",10,true,"9,90 zł","https://buy.stripe.com/9B6bIU9M98sNh2D6PF5gc0c"],
+  ["11","Układ współrzędnych","#475569",1,false,"9,90 zł","https://buy.stripe.com/6oUdR2e2p9wR4fR2zp5gc0d"],
+  ["12","Bryły","#92400E",7,true,"9,90 zł","https://buy.stripe.com/7sY8wIf6t7oJbIjfmb5gc0e"]
+]; /* [numer, nazwa, kolor, liczba zestawów, czy jest zeszyt, cena, link Stripe] */
 /* ================================================================== */
 function plural(n){return n===1?"zestaw":(n%10>=2&&n%10<=4&&!(n%100>=12&&n%100<=14))?"zestawy":"zestawów"}
 function buy(a,url){if(url){a.href=url;a.className="btn dark";a.target="_blank";a.rel="noopener"}else{a.removeAttribute("href");a.className="btn soon";a.textContent="Wkrótce"}}
